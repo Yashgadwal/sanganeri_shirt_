@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=BIZ+UDPMincho&family=Barlow+Condensed:wght@200&family=Dosis&family=Noto+Serif:wght@700&family=Oswald:wght@200&family=Rubik+Wet+Paint&family=Source+Code+Pro:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho&family=BIZ+UDPMincho&family=Barlow+Condensed:wght@200&family=Bebas+Neue&family=Dosis&family=Noto+Serif:wght@700&family=Oswald:wght@200&family=Rubik+Wet+Paint&family=Source+Code+Pro:ital,wght@1,300&display=swap');
+
+#forborder {
+    border: 2px solid black;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    /* /* box-shadow: black; */
+    /* margin-bottom: 2rem; */
+    /* box-shadow: 0px 0px 117px 0px black;  */
+    /* margin: 5rem; */
+
+}
+
+/*
+=================================================================
+whatsapp start 
+=================================================================
+*/
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+/*
+=================================================================
+whatsapp end 
+=================================================================
+*/
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    /* height: 1000ch; */
+}
+
+.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+    background-color: antiquewhite;
+    color: rebeccapurple;
+}
+
+.bg {
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bg1 {
+    display: none;
+}
+
+#name {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+h1,
+h2 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#logo {
+    margin: auto;
+    height: 150px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    cursor: pointer;
+}
+
+#h1 {
+    font-size: 4rem;
+}
+
+hr:not([size]) {
+    height: 22px;
+    opacity: 1;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+    animation-name: line;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: all;
+}
+
+@keyframes line {
+    0% {
+        background: black;
+    }
+
+    100% {
+        background: rgb(70, 64, 64);
+    }
+}
+
+
+
+
+
+/*
+=================================================================
+Media Query
+=================================================================
+*/
+
+@media only screen and (max-width:787px) {
+    
+    
+        #forborder {
+            margin-bottom: 2rem;
+            box-shadow: 0px 0px 17px 0px black;
+            border: none;
+            margin-left: 0;
+        }
+}
+
+@media screen and (min-width: 869px) {
+
+    .bg {
+        display: none;
+    }
+
+    .bg1 {
+        display: block;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    h1,
+    h2 {
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+    }
+}
+
+@media screen and (max-width: 504px) {
+    #h1 {
+        font-size: 3rem;
+    }
+}
